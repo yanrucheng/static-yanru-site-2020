@@ -15,107 +15,90 @@
 
                             <!-- Header -->
                                 <header id="header">
-                                    <a href="index.html" class="logo"><strong>Cheng Yanru</strong> @HKU</a>
+									<p hidden id="emailcopy">yanru@cyanru.com</p>
+                                    <a href="#" class="logo" onclick="copyToClipboard('#emailcopy')"><strong>yanru</strong>@cyanru.com <i id="emailcopy" class="far fa-copy" ></i> <span id='emailcopynotify' style="color:var(--main-color);"></span></a>
                                     <ul class="icons">
-                                        <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                        <li><a href="#" class="icon brands fa-weixin"><span class="label">Wechat</span></a></li>
-                                        <li><a href="#" class="icon brands fa-qq"><span class="label">QQ</span></a></li>
-                                        <li><a href="#" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/cheng-yanru/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                                     </ul>
                                 </header>
 
                             <!-- Banner -->
                                 <section id="banner">
                                     <div class="content">
-                                        <header>
-                                            <h1>Hi, I’m Cheng Yanru</h1>
-                                            <p>Computer Vision | Deep Learning | Algorithm Engineering</p>
-                                        </header>
-                                        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<header>
+											<h1>Hi, I’m Cheng Yanru</h1>
+											<p>Computer Vision | Deep Learning | Algorithm Engineering</p>
+										</header>
+										<p>I am a developer located in Beijing, China. I love Body Fitness, Traveling and Algorithms.</p>
                                         <ul class="actions">
-                                            <li><a href="#" class="button big">Learn More</a></li>
+                                            <li><a href="./cheng_yanru.pdf" target='blank' class="button big">Download Resume</a></li>
                                         </ul>
                                     </div>
+                                    <!--
                                     <span class="image object">
-                                        <img src="images/pic10.jpg" alt="">
+                                        <img src="images/pic02.jpg" alt="">
                                     </span>
+									-->
                                 </section>
 
-                            <!-- Section -->
-                                <section>
-                                    <header class="major">
-                                        <h2>Erat lacinia</h2>
-                                    </header>
-                                    <div class="features">
-                                        <article>
-                                            <span class="icon fa-gem"></span>
-                                            <div class="content">
-                                                <h3>Portitor ullamcorper</h3>
-                                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <span class="icon solid fa-paper-plane"></span>
-                                            <div class="content">
-                                                <h3>Sapien veroeros</h3>
-                                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <span class="icon solid fa-rocket"></span>
-                                            <div class="content">
-                                                <h3>Quam lorem ipsum</h3>
-                                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <span class="icon solid fa-signal"></span>
-                                            <div class="content">
-                                                <h3>Sed magna finibus</h3>
-                                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </section>
 
                             <!-- Section -->
-                                <section>
+                                <section id="projectspanel">
                                     <header class="major">
-                                        <h2>Ipsum sed dolor</h2>
+                                        <h2>Projects</h2>
                                     </header>
                                     <div class="posts">
                                         <article>
-                                            <a href="#" class="image"><img src="images/pic01.jpg" alt=""></a>
-                                            <h3>Interdum aenean</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                            <a href="#" class="image"><img src="images/pinet.png" alt=""></a>
+											<h3>PINet lightweight Lane Detection (2020)</h3>
+											<ul type="circle">
+											<li>Supervisor: Dr. P. Luo</li>
+											<li><strong>PINet</strong>, which stands for Point Instance Network, is an end-to-end framework, which predict key points and cluster those points to each instance, representing each traffic lane.</li>
+                                            </ul>
                                             <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
+                                                <li><a href="https://pinet.cyanru.com/uploadfile" class="button" target=blank>Live Demo</a></li>
+                                                <li><a href="https://pinet.cyanru.com/" class="button" target=blank>Video Demo</a></li>
+                                            </ul>
+                                        </article>
+
+                                        <article>
+                                            <a href="#" class="image"><img src="images/semanticseg.png" alt=""></a>
+											<h3>Semantic Segmentation on Roads (2018)</h3>
+
+											<ul type="circle">
+												<li>Supervisor: Prof. Rynson W. H. Lau</li>
+												<li>Semantic Segmentation using encoder-decoder structure DNN
+												</li>
+												<li>Implement and compare the performance improvement brought by GCN,PSPNet and DUC-HDC architectures.  </li>
+											</ul>
+
+                                            <ul class="actions">
+                                                <li><a href="https://drive.google.com/drive/folders/1JsmofsAk6V2pRyq1X594T6nMnk9MqUtF" class="button" target='blank'>Google Drive Demo</a></li>
                                             </ul>
                                         </article>
                                         <article>
-                                            <a href="#" class="image"><img src="images/pic02.jpg" alt=""></a>
-                                            <h3>Nulla amet dolore</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                            <a href="#" class="image"><img src="images/calc.png" alt=""></a>
+											<h3>Cracking - Calculator: the Game (2020)</h3>
+											<ul>
+												<li>Level cracking for <a href='http://www.simplemachine.co/game/calculator-the-game/' target='blank'>Calculator: the Game</a> and  <a href='http://www.simplemachine.co/game/calculator-2-game/' target='blank'>Calculator: the Game 2</a></li>
+												<li> Search algorithms based solutions to efficiently crack game levels</li>
+											</ul>
                                             <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
+                                                <li><a href="https://github.com/yanrucheng/crash_calculator" class="button" target="blank">Github Repository</a></li>
                                             </ul>
                                         </article>
                                         <article>
-                                            <a href="#" class="image"><img src="images/pic03.jpg" alt=""></a>
-                                            <h3>Tempus ullamcorper</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                            <a href="#" class="image"><img src="images/iceberg.png" alt=""></a>
+											<h3>Kaggle: Statoil/C-CORE Iceberg Classifier Challenge (2017)</h3>
+											<ul>
+												<li>Satellite image classification between iceberg and ships</li>
+												<li>Top 5% of all competitors with neural network model size < 0.5MB</li>
+											</ul>
                                             <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
+                                                <li><a href="https://www.kaggle.com/c/statoil-iceberg-classifier-challenge" class="button" target='blank'>More</a></li>
                                             </ul>
                                         </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/pic04.jpg" alt=""></a>
-                                            <h3>Sed etiam facilis</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+										<!--
                                         <article>
                                             <a href="#" class="image"><img src="images/pic05.jpg" alt=""></a>
                                             <h3>Feugiat lorem aenean</h3>
@@ -132,6 +115,72 @@
                                                 <li><a href="#" class="button">More</a></li>
                                             </ul>
                                         </article>
+										-->
+                                    </div>
+                                </section>
+
+                            <!-- Section -->
+                                <section>
+                                    <header id="experiencepanel" class="major">
+                                        <h2>Experiences</h2>
+                                    </header>
+                                    <div class="features">
+
+										<!--
+                                        <article>
+                                            <span class="icon solid fa-rocket"></span>
+                                            <div class="content">
+                                                <h3>ByteDance Ltd.</h3>
+												<ul type="circle">
+													<li></li>
+													<li></li>
+													<li></li>
+												</ul>
+                                            </div>
+                                        </article>
+										-->
+
+                                        <article>
+                                            <span class="icon solid fa-signal"></span>
+                                            <div class="content">
+                                                <h3>Alvanon HK Ltd. (2018 Jul. - 2019 Aug.)</h3>
+
+												<ul type="circle">
+													<li>Title: Jr. <strong>Machine Learning Developer</strong></li>
+													<li>Parametric Model Building R&D</li>
+													<ul type="circle">
+														<li>Custom implementation of parametric model based on SMPL model</li>
+													</ul>
+
+													<li>Entensive Data Consultancy Service </li>
+													<ul type="circle">
+														<li>Supply chain management and target customer demographic analysis based on 1 million+ human scanning data </li>
+													</ul>
+												</ul>
+
+                                            </div>
+                                        </article>
+
+                                        <article>
+                                            <span class="icon fa-gem"></span>
+                                            <div class="content">
+                                                <h3>City University of Hong Kong (2016 Jun. - 2017 Jul.)</h3>
+												<ul type="circle">
+													<li>Title: Student Assistant</li>
+													<li>Paper: "Teaching Computational Thinking by Gamification of K-12 Mathematics and Computer Science Tournament", in CTE2017</li>
+													<li>App: The Algebra Game & T he Algebra Maze</li>
+												</ul>
+                                            </div>
+                                        </article>
+										<!--
+                                        <article>
+                                            <span class="icon solid fa-paper-plane"></span>
+                                            <div class="content">
+                                                <h3>Sed magna finibus</h3>
+                                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                            </div>
+                                        </article>
+										-->
                                     </div>
                                 </section>
 
@@ -141,15 +190,17 @@
                 <!-- Sidebar -->
                     <div id="sidebar" class="inactive">
                         <div class="inner">
-
                             <!-- Search -->
+                            <!--
                                 <section id="search" class="alt">
                                     <form method="post" action="#">
                                         <input type="text" name="query" id="query" placeholder="Search">
                                     </form>
                                 </section>
+                            -->
 
                             <!-- Menu -->
+							<!--
                                 <nav id="menu">
                                     <header class="major">
                                         <h2>Menu</h2>
@@ -183,8 +234,10 @@
                                         <li><a href="#">Amet Lacinia</a></li>
                                     </ul>
                                 </nav>
+							-->
 
                             <!-- Section -->
+							<!--
                                 <section>
                                     <header class="major">
                                         <h2>Ante interdum</h2>
@@ -207,24 +260,26 @@
                                         <li><a href="#" class="button">More</a></li>
                                     </ul>
                                 </section>
+							-->
 
                             <!-- Section -->
                                 <section>
                                     <header class="major">
                                         <h2>Get in touch</h2>
                                     </header>
+									<!--
                                     <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									-->
                                     <ul class="contact">
-                                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-                                        <li class="icon solid fa-phone">(000) 000-0000</li>
-                                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br>
-                                        Nashville, TN 00000-0000</li>
+                                        <li class="icon solid fa-envelope"><a href="#">yanru@cyanru.com</a></li>
+                                        <li class="icon solid fa-phone">(+86) 198 6775 2324</li>
+                                        <li class="icon brands fa-weixin"><img src="images/wechat.jpg" style="width:70%;" alt=""></li>
                                     </ul>
                                 </section>
 
                             <!-- Footer -->
                                 <footer id="footer">
-                                    <p class="copyright">© Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                    <p class="copyright">Copyright © 2020. All rights reserved</p>
                                 </footer>
 
                         </div>
@@ -238,6 +293,20 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
+
+			<script>
+				function copyToClipboard(element) {
+					var $temp = $("<input>");
+					//console.log($temp);
+					$("body").append($temp);
+					$temp.val($(element).text()).select();
+					document.execCommand("copy");
+					$temp.remove();
+					$notify = $('#emailcopynotify');
+					$notify.text('Email Copied!');
+					setTimeout(function(){$notify.text('');}, 1000);
+				}
+			</script>
 
     
 </body></html>
